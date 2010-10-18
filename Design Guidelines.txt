@@ -1,0 +1,3 @@
+Design structure:
+		Pure functions may not modify any non-private variables. Ideally, functions should be written adhering to a functional composition style or through (non-IO) monadic chains.
+		To prevent extraneous copies of values and objects, an STM library will be used by functions to allow access of previously computed values or values in a the complentary function in a corecursive routine. To prevent improper access of an STM object upon completion of execution of its owner functions, the object must be either deallocated or utilize a complete function which will set an internal flag within the object that will verify before being used again that unauthorized functions cannot access prior data.

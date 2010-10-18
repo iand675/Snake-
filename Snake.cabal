@@ -1,0 +1,10 @@
+Name:       Snake
+Version:    0.0
+Synopsis:   The classic snake game implemented using OpenGL and GLUT
+Author:     Ian Duncan
+
+Executable Snake
+    Build-Depends:  base, GLUT, OpenGL, random
+    Main-is:        Main.hs
+    Hs-Source-Dirs: Source
+    Other-Modules:  Cube, GLGraphics, Snake, QStack
